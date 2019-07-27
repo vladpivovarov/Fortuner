@@ -1,6 +1,5 @@
 .footer {
 	flex: 0 0 auto;
-	height: 80px;
 	min-width: 320px;
 	overflow: hidden;
 	background-color: #dadada;
@@ -9,6 +8,7 @@
 .footer__container {
 	display: flex;
 	align-items: center;
+	min-height: 80px;
 }
 
 .footer__copyright {
