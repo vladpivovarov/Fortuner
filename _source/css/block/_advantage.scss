@@ -43,11 +43,19 @@
 		@include desktop {
 			border-bottom-color: transparent;
 		}
+
+		@include tablet {
+			border-bottom: 1px solid #484848;
+		}
     }
 
     &:nth-child(4) {
     	@include desktop {
 			border-bottom-color: transparent;
+		}
+
+		@include tablet {
+			border-bottom: 1px solid #484848;
 		}
     }
 
