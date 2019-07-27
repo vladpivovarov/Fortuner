@@ -7,12 +7,15 @@
 }
 
 .footer__container {
-	display: flex;
 	min-height: 80px;
+	display: flex;
+	align-items: stretch;
 	background: green;
 }
 
 .footer__copyright {
+	display: flex;
+	align-items: center;
 	font-family: $font_toyotatext;
 	font-size: 14px;
 	font-weight: 500;
