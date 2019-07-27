@@ -7,7 +7,6 @@
 
 .advantage__list {
 	display: flex;
-	min-height: 150px;
 
 	@include desktop {
 		flex-wrap: wrap;
@@ -16,6 +15,7 @@
 
 .advantage__item {
 	width: 25%;
+	min-height: 150px;
 	padding: 12px 29px 15px 19px;
 	background-color: $color_silver;
 	border-right-color: #484848;
