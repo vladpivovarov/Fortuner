@@ -1,0 +1,18 @@
+.footer {
+	height: 80px;
+	min-width: 320px;
+	overflow: hidden;
+	background-color: #dadada;
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+}
+
+.footer__copyright {
+	font-family: $font_toyotatext;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba($color_silver, .5);
+}

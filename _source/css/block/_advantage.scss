@@ -1,0 +1,109 @@
+
+.advantage {
+	margin-top: -4px;
+	background-color: $color_silver;
+	box-shadow: 0px 3px 13px 0px rgba(40, 40, 40, 0.17);
+}
+
+.advantage__list {
+	display: flex;
+	min-height: 150px;
+
+	@include desktop {
+		flex-wrap: wrap;
+	}
+}
+
+.advantage__item {
+	width: 25%;
+	padding: 12px 29px 15px 19px;
+	background-color: $color_silver;
+	border-right-color: #484848;
+    border-right-style: solid; 
+    border-right-width: 1px; 
+    border-left-color: #484848;
+    border-left-style: solid; 
+    border-left-width: 1px;
+    transition: all .4s;
+
+    @include desktop {
+		width: 50%;
+		border-bottom-color: #484848;
+    	border-bottom-style: solid; 
+    	border-bottom-width: 1px;
+	}
+
+	@include tablet {
+		width: 100%;
+		border: none;
+		border-bottom: 1px solid #484848;
+	}
+
+	&:nth-child(3) {
+		@include desktop {
+			border-bottom-color: transparent;
+		}
+    }
+
+    &:nth-child(4) {
+    	@include desktop {
+			border-bottom-color: transparent;
+		}
+    }
+
+    &:first-child {
+		border-left-width: 2px;
+		@include desktop {
+			border-left-width: 1px;
+		} 
+    }
+
+    &:last-child {
+		border-right-width: 2px; 
+		@include desktop {
+			border-right-width: 1px;
+		}
+    }
+}
+
+.advantage__title-block {
+	display: flex;
+	margin-bottom: 5px;
+}
+
+.advantage__number {
+	margin-right: 9px;
+	font-family: $font_toyotadisplay;
+	font-weight: bold;
+	font-size: 50px;
+	color: rgba(#fff, .2);
+	transition: all .3s;
+}
+
+.advantage__title {
+	padding-top: 3px;
+	font-family: $font_toyotadisplay;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 24px;
+}
+
+.advantage__description {
+	font-family: $font_toyotatext;
+	font-weight: normal;
+	font-size: 14px;
+	color: #fff;
+	line-height: 18px;
+}
+
+.advantage__item:hover {
+	background-color: $color_red;
+	border-right-color: $color_red;
+    border-left-color: $color_red;
+
+    & .advantage__number {
+    	color: #fff;
+    }
+}

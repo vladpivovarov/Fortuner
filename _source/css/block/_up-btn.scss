@@ -1,0 +1,42 @@
+
+.up-btn {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #ce0000;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: rgba($color_red, 0.8);
+	}
+
+	&:focus {
+		background-color: darken($color_red, 10);
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 20px;
+		height: 10px;
+		background-image: url("../img/sprite.png");
+		background-position: -31px 0;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 200%;
+		height: 200%;
+	}
+}

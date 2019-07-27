@@ -1,0 +1,27 @@
+
+
+.subtitle__desc {
+	position: relative;
+	font-family: $font_toyotadisplay;
+	font-weight: bold;
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 1.4;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: -8px;
+		left: 0;
+		width: 50px;
+		height: 3px;
+		background-color: #999999;
+	}
+}
+
+.subtitle__price {
+	font-family: $font_toyotadisplay;
+	font-weight: bold;
+	font-size: 34px;
+	text-transform: uppercase;
+}

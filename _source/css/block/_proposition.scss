@@ -1,0 +1,40 @@
+
+.proposition {	
+	background-color: $color_light_silver;
+}
+
+.proposition__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 800px;
+	padding: 3px 0 68px;
+
+	@include laptop {
+		width: auto;
+		padding: 10px 10px 68px 10px;
+	}
+}
+
+.proposition__title {
+	margin-bottom: 7px;
+}
+
+.proposition__description {
+	margin-bottom: 40px;
+	text-align: center;
+	font-family: $font_toyotatext;
+	font-size: 24px;
+	font-weight: normal;
+	color: $color_silver;
+}
+
+.proposition__description_bold {
+	font-weight: bold;
+}
+
+.proposition__form {
+	flex: 1;
+	max-width: 630px;
+}
+

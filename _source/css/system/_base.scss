@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	font-family: $font_toyotatext;
+	font-size: 14px;
+	color: $color_silver;
+}
+
+.page {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	flex: 1;
+	min-width: 320px;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	min-height: 100%;
+	width: $width_container;
+
+	@include bigdesktop {
+		width: $width_container;
+	}
+
+	@include desktop {
+		width: 980px;
+	}
+
+	@include laptop {
+		width: 750px;
+	}
+
+	@include tablet {
+		width: 460px;
+	}
+
+	@include mobile {
+		max-width: 330px;
+	}
+
+	@include minimobile {
+		max-width: 300px;
+	}
+}
+
+svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	font-family: $font_toyotatext;
+	font-size: 14px;
+	color: #878787;
+	transition: color .3s;
+
+	&:hover {
+		color: rgba($color_red, 0.8);
+	}
+
+	&:focus {
+		color: darken($color_red, 10);
+	}
+}

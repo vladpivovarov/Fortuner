@@ -1,0 +1,21 @@
+
+.title {
+	position: relative;
+	padding-bottom: 20px;
+	font-family: $font_toyotadisplay;
+	font-size: 32px;
+	font-weight: bold;
+	color: $color_silver;
+	text-align: center;
+
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 3px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80px;
+		height: 3px;
+		background-color: rgba($color_red, .4);
+	}
+}

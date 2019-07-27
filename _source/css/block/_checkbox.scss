@@ -1,0 +1,39 @@
+
+.checkbox {
+	cursor: pointer;
+}
+
+.checkbox__square {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-right: 11px;
+	border: 1px solid $color_red;
+}
+
+.checkbox__text {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.checkbox__input {
+	position: absolute;
+	left: -10000000px;
+
+	&:checked {
+		& + .checkbox__square {
+			&:after {
+				content: "";
+				position: absolute;
+				width: 120%;
+				height: 120%;
+				top: 0;
+				left: 1px;
+				background-image: url("../img/sprite.png");
+				background-position: -66px 0;
+			}
+		}
+	}
+}

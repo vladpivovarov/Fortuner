@@ -1,0 +1,121 @@
+
+.modal {
+	position: fixed;
+	top: -99000px;
+	left: -999999px;
+	transition: background-color .3s;
+	background-color: rgba(#000, 0);
+}
+
+.modal__rect {
+	position: absolute;
+	@include center();
+	max-width: 500px;
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 8px;
+	transition: opacity .3s;
+	opacity: 0;
+
+	@include mobile {
+		padding: 30px;
+	}
+}
+
+.modal_active {
+	display: block;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(#000, .6);
+
+	& .modal__rect {
+		opacity: 1;
+	}
+}
+
+.modal__close {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 52px;
+	height: 52px;
+	cursor: pointer;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 12px;
+		height: 12px;
+		background-image: url("../img/sprite.png");
+		background-position: 16px 0;
+	}
+	
+}
+
+.modal__row {
+	padding: 0 40px 20px 40px;
+	text-align: center;
+
+	&:nth-child(3) {
+			display: flex;
+			margin-bottom: 20px;
+			& .modal__input-car {
+			flex: 1 1 210px;
+			margin-right: 10px;
+		}
+
+		& .modal__input-year {
+			flex: 1 1 120px;
+			width: 40%;
+		}
+	}
+
+	@include desktop {
+		padding: 0 20px 10px 20px;
+	}
+
+	@include mobile {
+		padding: 0 0 10px 0;
+	}
+}
+
+.modal__description {
+	margin-bottom: 15px;
+	font-family: $font_toyotatext;
+	font-size: 16px;
+	color: $color_silver;
+	text-align: center;
+	line-height: 24px;
+}
+
+.modal__checkbox {
+	display: block;
+
+	& .checkbox__square {
+		@include laptop {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.modal__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal .modal__title {
+	margin: 0 0 14px 0;
+	font-size: 24px;
+}
+
+.modal__checkbox {
+	order: 1;
+}
+
+.modal__button {
+	display: inline-block;
+}

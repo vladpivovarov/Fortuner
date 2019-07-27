@@ -1,0 +1,49 @@
+
+.nav-list {
+	min-height: 100px;
+	display: flex;
+	transition: opacity .3s;
+
+	@include tablet {
+		top: -500px;
+		position: absolute;
+		left: 0;
+		flex-wrap: wrap;
+		z-index: 9999;
+		background-color: #fff;
+		border: 1px solid $color_light_silver;
+		box-shadow: 0px 8px 10px 0px rgba(40, 40, 40, 0.1);
+		opacity: 0;
+	}
+}
+
+.nav-list__item {
+	flex: 1 1 137px;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	padding: 40px 10px 10px 10px;
+	text-align: center;
+	line-height: 100%;
+	font-family: $font_toyotadisplay;
+	font-size: 18px;
+	font-weight: bold;
+	color: $color_silver;
+	text-decoration: none;
+	line-height: 20px;
+	background-color: #fff;
+	transition: all 0.3s;
+
+	@include tablet {
+		align-items: center;
+		width: 100%;
+		padding: 20px 10px 20px 10px;
+		border: 1px solid $color_light_silver;
+	}
+
+	&:hover {
+		background-color: $color_red;
+		color: #fff;
+	}
+}
+

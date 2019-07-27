@@ -1,0 +1,17 @@
+
+
+.hamburger {
+	position: absolute;
+	left: -99999px;
+	top: 0;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/sprite.png");
+	background-position: -20px -23px;
+	cursor: pointer;
+
+	@include tablet {
+		left: 0px;
+	}
+}

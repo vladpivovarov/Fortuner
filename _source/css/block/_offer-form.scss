@@ -1,0 +1,46 @@
+
+.offer-form {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.2);
+	border-radius: 25px;
+
+	@include laptop {
+		flex-wrap: wrap;
+		box-shadow: none;
+	}
+}
+
+.offer-form__input {
+	height: 50px;
+	width: 100%;
+	padding: 13px 255px 15px 26px;
+	line-height: 100%;
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	font-family: $font_toyotadisplay;
+	font-size: 16px;
+
+	@include laptop {
+		width: 100%;
+		padding: 15px 35px 15px 35px;
+		margin-bottom: 10px;
+	}
+
+	&::placeholder {
+		color: rgba(#3d3d3d, .5);
+	}
+}
+
+.offer-form__button {
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+
+	@include laptop {
+		position: static;
+	}
+}

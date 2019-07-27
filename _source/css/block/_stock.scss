@@ -1,0 +1,51 @@
+
+.stock {
+	background-color: $color_light_silver;
+}
+
+.stock__container {
+	padding: 35px 0 20px;
+}
+
+.stock__row {
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.stock__description p {
+	margin-bottom: 25px;
+	font-family: $font_toyotatext;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color_silver;
+}
+
+.stock__next {
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.stock__link {
+	position: relative;
+	padding: 5px 30px 5px 5px;
+	display: inline-block;
+	font-family: $font_toyotadisplay;
+	font-size: 18px;
+	font-weight: bold;
+	color: $color_red;
+	text-decoration: none;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 10px;
+		right: 0;
+		width: 19px;
+		height: 10px;
+		background-image: url("../img/sprite.png");
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		transform: rotate(180deg);
+	}
+
+}
