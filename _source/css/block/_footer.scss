@@ -3,22 +3,18 @@
 	min-width: 320px;
 	overflow: hidden;
 	background-color: #dadada;
-	background: yellow;
 }
 
 .footer__container {
 	min-height: 80px;
-	display: flex;
-	align-items: stretch;
-	background: green;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .footer__copyright {
-	display: flex;
-	align-items: center;
 	font-family: $font_toyotatext;
 	font-size: 14px;
 	font-weight: 500;
 	color: rgba($color_silver, .5);
-	background: red;
 }
